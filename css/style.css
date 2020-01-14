@@ -42,6 +42,16 @@ body {
   gap: 16px;
   padding: 120px 16px 16px;
   position: relative; }
+  .gallery__image {
+    width: 100%; }
+  .gallery__article {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    background-color: #1b1b1d; }
 
 .contact {
   grid-area: contact;
