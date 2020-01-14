@@ -20,20 +20,33 @@ body {
   max-width: 1240px;
   margin: 0 auto;
   background-color: #2c2141; }
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: minmax(300px, auto) 1fr;
+      grid-template-rows: auto auto auto 1fr auto auto;
+      grid-template-areas: 'logo gallery' 'menu gallery' 'search gallery' '. gallery' 'contact gallery' 'footer footer'; } }
 
 .logo {
   grid-area: logo;
   padding: 16px;
-  height: 10vh;
+  height: 15vh;
   background-color: blueviolet; }
 
 .search {
   grid-area: search;
   padding: 16px; }
+  @media (min-width: 1024px) {
+    .search {
+      text-align: left;
+      padding: 16px;
+      min-height: 80px; } }
 
 .menu {
   grid-area: menu;
   padding: 16px; }
+  @media (min-width: 1024px) {
+    .menu {
+      min-height: 300px; } }
 
 .gallery {
   grid-area: gallery;
@@ -63,3 +76,6 @@ body {
   height: 50px;
   text-align: left;
   padding: 16px; }
+  @media (min-width: 1024px) {
+    .footer {
+      text-align: center; } }
