@@ -43,10 +43,15 @@ body {
 
 .menu {
   grid-area: menu;
-  padding: 16px; }
+  display: flex;
+  flex-direction: column; }
   @media (min-width: 1024px) {
     .menu {
-      min-height: 300px; } }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 16px;
+      padding: 16px; } }
 
 .gallery {
   grid-area: gallery;
@@ -69,13 +74,17 @@ body {
 .contact {
   grid-area: contact;
   height: 50px;
-  padding: 16px; }
+  padding: 16px;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .contact {
+      text-align: left; } }
 
 .footer {
   grid-area: footer;
   height: 50px;
-  text-align: left;
+  text-align: center;
   padding: 16px; }
   @media (min-width: 1024px) {
     .footer {
-      text-align: center; } }
+      text-align: left; } }
